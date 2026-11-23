@@ -1,0 +1,10 @@
+:root {
+  --main-color: #71a894;
+  --main-black: #303031;
+  --main-bg-color: #f9f9f9;
+  --gray-01: #66645e;
+  --white: #ffffff;
+
+  --font-roboto: 'Roboto', sans-serif;
+  --font-popins: 'Poppins', sans-serif;
+}

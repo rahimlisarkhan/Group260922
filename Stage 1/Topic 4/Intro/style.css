@@ -1,0 +1,28 @@
+.content {
+  padding: 60px;
+}
+
+.conitaner {
+  background-color: red;
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .conitaner {
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .conitaner {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .conitaner {
+    width: 100%;
+  }
+}

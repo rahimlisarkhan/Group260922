@@ -1,0 +1,106 @@
+@import url('./reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./variable.css');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-roboto);
+  background-color: var(--main-bg-color);
+}
+
+.container {
+  /* background-color: red; */
+  width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 106px;
+  background-color: var(--main-bg-color);
+  position: sticky;
+  top: 0;
+  border-bottom: 1px solid #a04e4e;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 30px;
+}
+
+.header-brand {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.brand-title {
+  color: var(--main-black);
+  font-size: 32px;
+  font-weight: 600;
+  font-family: var(--font-popins);
+}
+
+.nav-list {
+  display: flex;
+  gap: 40px;
+}
+
+.nav-link {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--main-black);
+}
+
+.nav-link:hover {
+  color: var(--main-color);
+}
+
+.active {
+  color: var(--main-color);
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .container {
+    width: 1000px;
+  }
+  .brand-title {
+    font-size: 24px;
+  }
+
+  .navbar {
+    display: none;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .container {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .brand-title {
+    display: none;
+  }
+}
