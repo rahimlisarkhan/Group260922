@@ -27,7 +27,22 @@ var b = 2;
 // var result = a < b; // true
 // var result = a <= b; // true
 // var result = a >= b; // true
-var result = a != b; // true
+// var result = a != b; // true
 // var result = a !== b; // true
 
-console.log(result);
+// console.log(result);
+
+// && - AND
+// || - OR
+// ! - NOT
+
+var age = 18;
+var citizen = 'en';
+// var currentLocation = 'baku';
+
+var accept = age >= 18 && citizen == 'en'; //true
+// var accept = age >= 18 && citizen == 'en' && currentLocation != 'london'; //true
+
+// var accept2 = age >= 18 || citizen == 'en' || currentLocation == 'london'; //true
+
+// console.log(result);
